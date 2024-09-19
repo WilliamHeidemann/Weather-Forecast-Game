@@ -42,11 +42,6 @@ namespace Components
             if (!_isCounting) return;
             
             slider.value = _timer.SecondsLeft;
-
-            if (_timer.IsFinished) 
-            { 
-                OnTimerExpire();
-            }
         }
 
         private void OnTimerExpire()
