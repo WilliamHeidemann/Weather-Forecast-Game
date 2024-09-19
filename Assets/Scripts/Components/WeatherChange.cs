@@ -14,7 +14,7 @@ public class WeatherChange : MonoBehaviour
         Rainy.SetActive(false);
         Snowy.SetActive(false);
 
-        switch (StaticValues.PredictedWeather)
+        switch (StaticValues.ActualWeather)
         {
             case Weather.Sunny:
                 Sunny.SetActive(true);

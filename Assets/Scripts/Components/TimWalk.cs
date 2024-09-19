@@ -1,4 +1,5 @@
 using UnityEngine;
+using Model;
 
 public class TimWalk : MonoBehaviour
 {
@@ -6,9 +7,17 @@ public class TimWalk : MonoBehaviour
     public Transform start;
     public Transform finish;
     
-    public float speed = 1.0f;
+    public float baseSpeed = 0.1f;
 
     private float elapsedTime = 0.0f;
+
+    void Start()
+    {
+        if (StaticValues.PredictedWeather == StaticValues.ActualWeather)
+        {
+            baseSpeed = 0.2f;
+        }
+    }
 
  
     // Update is called once per frame
@@ -16,7 +25,7 @@ public class TimWalk : MonoBehaviour
     {  
         if (transform.position != finish.position)	
         {
-            elapsedTime += Time.deltaTime * speed;
+            elapsedTime += Time.deltaTime * baseSpeed;
             transform.position = Vector3.Lerp(start.position, finish.position, elapsedTime);
         }
     }
