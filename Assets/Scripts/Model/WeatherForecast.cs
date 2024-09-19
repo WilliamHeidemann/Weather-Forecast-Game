@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Model.Items;
 using Random = UnityEngine.Random;
 
 namespace Model
@@ -35,13 +36,13 @@ namespace Model
                 $"Sun: {ChanceOfSun}. Rain: {ChanceOfRain}. Snow: {ChanceOfSnow}. Sum: {ChanceOfSun + ChanceOfRain + ChanceOfSnow}";
         }
 
-        public Dictionary<Weather, float> GetDictionary()
+        public Dictionary<Weather, ItemStats> GetDictionary()
         {
-            return new Dictionary<Weather, float>()
+            return new Dictionary<Weather, ItemStats>()
             {
-                { Weather.Rainy, ChanceOfRain },
-                { Weather.Snowy, ChanceOfSnow },
-                { Weather.Sunny, ChanceOfSun }
+                { Weather.Rainy, new UmbrellaStats(this) },
+                { Weather.Snowy, new SkiStats(this) },
+                { Weather.Sunny, new SunglassesStats(this) }
             };
         }
     }
