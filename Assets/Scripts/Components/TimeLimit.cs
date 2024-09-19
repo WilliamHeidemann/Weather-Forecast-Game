@@ -27,7 +27,6 @@ namespace Components
 
         private void Update()
         {
-            print(slider.value);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if (!_isCounting)
@@ -42,6 +41,12 @@ namespace Components
             if (!_isCounting) return;
             
             slider.value = _timer.SecondsLeft;
+
+            if (_timer.IsFinished)
+            {
+                OnTimerExpire();
+                _isCounting = false;
+            }
         }
 
         private void OnTimerExpire()
