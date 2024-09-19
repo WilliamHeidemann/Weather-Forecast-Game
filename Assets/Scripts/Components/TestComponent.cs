@@ -14,7 +14,6 @@ public class TestComponent : MonoBehaviour
         print($"Sunglasses stats: {new SunglassesStats(forecast)}");
         print($"Umbrella stats: {new UmbrellaStats(forecast)}");
         print($"Ski stats: {new SkiStats(forecast)}");
-        print($"Weather was: {forecast.GetWeather()}");
     }
 
     public void WorkWithChart()
@@ -23,7 +22,5 @@ public class TestComponent : MonoBehaviour
         forecast.GetDictionary();
         var a = forecast.ChanceOfSun;
         var b = forecast.ChanceOfSnow;
-
-        var weather = forecast.GetWeather();
     }
 }

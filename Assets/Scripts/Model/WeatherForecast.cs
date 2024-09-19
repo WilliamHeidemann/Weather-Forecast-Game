@@ -11,13 +11,14 @@ namespace Model
             ChanceOfSun = Random.value;
             ChanceOfRain = Random.Range(0f, 1f - ChanceOfSun);
             ChanceOfSnow = 1f - (ChanceOfSun + ChanceOfRain);
+            StaticValues.ActualWeather = GetWeather();
         }
 
         public float ChanceOfSun { get; }
         public float ChanceOfRain { get; }
         public float ChanceOfSnow { get; }
 
-        public Weather GetWeather()
+        private Weather GetWeather()
         {
             var value = Random.value;
 
