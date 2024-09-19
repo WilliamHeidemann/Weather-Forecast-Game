@@ -9,23 +9,19 @@ public class TimWalk : MonoBehaviour
 
     private float elapsedTime = 0.0f;
 
-    void Start()
-    {
-        
-    }
-
+ 
     // Update is called once per frame
     void Update()
     {  
 
-        elapsedTime += Time.deltaTime * speed;
-        transform.position = Vector3.Lerp(startPosition, endPosition, elapsedTime);
 
-      /*  if (transform.position != endPosition)	
+
+        if (transform.position != endPosition)	
         {
+            elapsedTime += Time.deltaTime * speed;
+            transform.position = Vector3.Lerp(startPosition, endPosition, elapsedTime);
 
-
-        }*/
+        }
 
         
     }
