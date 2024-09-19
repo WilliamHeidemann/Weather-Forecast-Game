@@ -684,8 +684,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -271.78, y: 11.784}
-  m_SizeDelta: {x: 200.93, y: 109.8145}
+  m_AnchoredPosition: {x: -15.418, y: -85}
+  m_SizeDelta: {x: 231.99, y: 140.9035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &537765201
 MonoBehaviour:
@@ -872,7 +872,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 678242922}
   m_Direction: 2
   m_Value: 0.9999998
-  m_Size: 0.37706664
+  m_Size: 0.4552
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1155,8 +1155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -271.79, y: -109.68}
-  m_SizeDelta: {x: 200.94, y: 133.12}
+  m_AnchoredPosition: {x: 239, y: 85}
+  m_SizeDelta: {x: 247.5735, y: 156.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &658805290
 MonoBehaviour:
@@ -1528,8 +1528,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1807353633}
   m_HandleRect: {fileID: 1807353632}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.29852933
+  m_Value: 0.9999998
+  m_Size: 0.4226
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1611,8 +1611,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -271.78394, y: 121.47058}
-  m_SizeDelta: {x: 200.9321, y: 109.5588}
+  m_AnchoredPosition: {x: -242.9395, y: 73.39}
+  m_SizeDelta: {x: 223.0531, y: 146.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761772513
 MonoBehaviour:
@@ -1834,8 +1834,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 609786439}
   m_HandleRect: {fileID: 609786438}
   m_Direction: 2
-  m_Value: 0.9999999
-  m_Size: 0.29938167
+  m_Value: 0.9999998
+  m_Size: 0.40301168
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2641,6 +2641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2050787432}
   - component: {fileID: 2050787431}
+  - component: {fileID: 2050787433}
   m_Layer: 0
   m_Name: BarChartManager
   m_TagString: Untagged
@@ -2678,6 +2679,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2050787433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050787430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1075bc8ae4444c49a9d69960df44f564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
 --- !u!1 &2059293114
 GameObject:
   m_ObjectHideFlags: 0
