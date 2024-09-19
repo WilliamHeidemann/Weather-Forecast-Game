@@ -1,4 +1,5 @@
 using UnityEngine;
+using Model;
 
 public class ChosenTim : MonoBehaviour
 {
@@ -14,12 +15,18 @@ public class ChosenTim : MonoBehaviour
         timUmbrella.SetActive(false);
         timSkies.SetActive(false);
 
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        switch (StaticValues.PredictedWeather)
+        {
+            case Weather.Sunny:
+                timSunglasses.SetActive(true);
+                break;
+            case Weather.Rainy:
+                timUmbrella.SetActive(true);
+                break;
+            case Weather.Snowy:
+                timSkies.SetActive(true);
+                break;
+        }
         
     }
 }
