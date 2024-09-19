@@ -16,7 +16,6 @@ public class BarChartScript : MonoBehaviour
     public TMP_Text snowChance;
     public WeatherForecast forecast;
     public Score score;
-    public ItemSelector itemSelector;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -72,10 +71,5 @@ public class BarChartScript : MonoBehaviour
         sunChance.SetText(a.ToString() + "%");
         rainChance.SetText(b.ToString() + "%");
         snowChance.SetText(c.ToString() + "%");
-    }
-
-    void OnTimerExpire()
-    {
-        
     }
 }
