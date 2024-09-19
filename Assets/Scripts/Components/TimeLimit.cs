@@ -12,9 +12,16 @@ namespace Components
         private bool _isCounting;
         private CountdownTimer _timer;
         private const float SecondsToFinish = 5f;
-        
+
+        private void Start()
+        {
+            slider.minValue = 0f;
+            slider.maxValue = SecondsToFinish;
+        }
+
         private void Update()
         {
+            print(slider.value);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if (!_isCounting)
