@@ -66,8 +66,8 @@ public class BarChartScript : MonoBehaviour
         int a = (int)(Math.Round(forecast.ChanceOfSun * 100));
         int b = (int)(Math.Round(forecast.ChanceOfRain * 100));
         int c = 100-a-b;
-        sunChance.SetText(a.ToString());
-        rainChance.SetText(b.ToString());
-        snowChance.SetText(c.ToString());
+        sunChance.SetText(a.ToString() + "%");
+        rainChance.SetText(b.ToString() + "%");
+        snowChance.SetText(c.ToString() + "%");
     }
 }
