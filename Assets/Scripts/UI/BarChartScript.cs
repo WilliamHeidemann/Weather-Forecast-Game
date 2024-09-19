@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using System;
+using Components;
 
 public class BarChartScript : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class BarChartScript : MonoBehaviour
     public TMP_Text rainChance;
     public TMP_Text snowChance;
     public WeatherForecast forecast;
+    public Score score;
+    public ItemSelector itemSelector;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -69,5 +72,10 @@ public class BarChartScript : MonoBehaviour
         sunChance.SetText(a.ToString() + "%");
         rainChance.SetText(b.ToString() + "%");
         snowChance.SetText(c.ToString() + "%");
+    }
+
+    void OnTimerExpire()
+    {
+        
     }
 }
