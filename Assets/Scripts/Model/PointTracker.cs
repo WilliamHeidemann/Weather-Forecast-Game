@@ -17,7 +17,7 @@ namespace Model
 
         private void UpdateScoreText(int points)
         {
-            _scoreText.text = points.ToString();
+            _scoreText.text = $"Points [ {points.ToString()} ]";
         }
 
         public void AddPoints(int points)
