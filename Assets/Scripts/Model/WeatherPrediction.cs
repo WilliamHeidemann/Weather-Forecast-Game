@@ -27,6 +27,7 @@ namespace Model
                 Weather.Snowy => Weather.Sunny,
                 _ => throw new ArgumentOutOfRangeException()
             };
+            StaticValues.PredictedWeather = _prediction.Value;
         }
         
         private void ChangeUI(Weather weatherSelection)
