@@ -18,6 +18,7 @@ public class TimWalk : MonoBehaviour
         {
             baseSpeed = 0.2f;
         }
+        baseSpeed = baseSpeed * StaticValues.PointsAwarded/90;
     }
 
  
