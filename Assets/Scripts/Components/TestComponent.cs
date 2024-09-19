@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Model;
 using Model.Items;
 using UnityEngine;
 using UtilityToolkit.Editor;
@@ -13,5 +15,15 @@ public class TestComponent : MonoBehaviour
         print($"Umbrella stats: {new UmbrellaStats(forecast)}");
         print($"Ski stats: {new SkiStats(forecast)}");
         print($"Weather was: {forecast.GetWeather()}");
+    }
+
+    public void WorkWithChart()
+    {
+        var forecast = new WeatherForecast();
+        forecast.GetDictionary();
+        var a = forecast.ChanceOfSun;
+        var b = forecast.ChanceOfSnow;
+
+        var weather = forecast.GetWeather();
     }
 }

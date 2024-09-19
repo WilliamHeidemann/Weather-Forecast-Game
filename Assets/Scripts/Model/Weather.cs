@@ -1,6 +1,9 @@
-public enum Weather
+namespace Model
 {
-    Sunny,
-    Rainy,
-    Snowy
+    public enum Weather
+    {
+        Sunny,
+        Rainy,
+        Snowy
+    }
 }
