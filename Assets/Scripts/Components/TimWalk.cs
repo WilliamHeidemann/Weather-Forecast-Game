@@ -1,5 +1,6 @@
 using UnityEngine;
 using Model;
+using UnityEngine.SceneManagement;
 
 public class TimWalk : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class TimWalk : MonoBehaviour
         {
             elapsedTime += Time.deltaTime * baseSpeed;
             transform.position = Vector3.Lerp(start.position, finish.position, elapsedTime);
+        }
+        else
+        {
+            SceneManager.LoadScene("UIScene");
         }
     }
 }

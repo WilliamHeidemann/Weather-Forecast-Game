@@ -20,6 +20,9 @@ public class BarChartScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        sunChance.SetText("");
+        rainChance.SetText("");
+        snowChance.SetText("");
         forecast = new WeatherForecast();
         GenerateValues();
         AddGridValues();

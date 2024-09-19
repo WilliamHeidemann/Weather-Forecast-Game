@@ -66,6 +66,7 @@ namespace Components
                 default:
                     break;
             }
+            barChartScript.score.PointTracker.UpdatePoints();
             SceneManager.LoadScene("timmyWalking");
         }
     }

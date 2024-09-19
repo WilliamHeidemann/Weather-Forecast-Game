@@ -23,6 +23,12 @@ namespace Model
         public void AddPoints(int points)
         {
             _points.Value += points;
+            StaticValues.PointsAwarded = points;
+        }
+
+        public void UpdatePoints()
+        {
+            StaticValues.Points += _points.Value;
         }
     }
 }
